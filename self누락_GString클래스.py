@@ -15,3 +15,4 @@ class GString:
 g = GString()
 g.set("First Message")
 g.print()
+
