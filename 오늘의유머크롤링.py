@@ -23,9 +23,9 @@ for n in range(1,11):
 
         for item in list:
                 try:
-                        title = item.find("a").txt.strip()
+                        title = item.find("a").text.strip()
                         #print(title)
-                        if (re.search('미국', title)):
+                        if (re.search('한국', title)):
                                  print(title)
                 except:
                         pass

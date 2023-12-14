@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+#엑셀 쓰기
 from openpyxl import Workbook
 
 search_keyword='맥북에어'
@@ -50,6 +51,6 @@ for page in range(1, 101):
 
         ws.append([blog_address, blog_address_title, post_title, post_date])
 
-path = 'c:\\work\\'
+path = 'c:\\work2\\'
 file_path = f'{path}{search_keyword}_blog_data.xlsx'
 wb.save(file_path)
